@@ -1,0 +1,143 @@
+@import 'bootstrap';
+
+.minheight{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.background{
+    background-image: url('../../public/img/ArtBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    position: relative;
+    top: 50px;
+    width: 80%;
+    
+}
+
+
+.logodim{
+    width: 167px;
+    
+}
+
+
+
+.mt-150{
+    margin-top: 150px;
+}
+.formcontainer{
+    width: 30%;
+    margin-top: 30px;
+}
+
+.footer{
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+
+.nav-item{
+    font-size: 1.5rem;
+    color: blue;
+    margin: 0px 20px 0px 20px;
+}
+
+
+.nav-link{
+    transition: 0s;
+}
+
+.nav-link:hover{
+    background-color: #eca668;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.active{
+    color: #eca668 !important;
+    background-color: transparent !important;
+}
+
+.welcomeimg{
+    width: 500px;
+    height: 500px;
+}
+
+.welcomep2{
+    width: 500px;
+    height: 500px;
+}
+
+.welcomep1{
+    width: 500px;
+    height: 500px;
+    backdrop-filter: blur(10px);
+
+}
+.pwelcome{
+    font-size: 1.3rem;
+}
+
+
+
+
+
+@media only screen and (max-width:992px) {
+
+.logodim{
+    display: none;
+}
+.mt-150{
+    margin-top: 50px;
+}
+
+.formcontainer{
+    width: auto;
+    margin-top: 30px;
+}
+
+.welcomeimg{
+    width: 360px;
+    height: 360px;
+}
+
+.welcomep2{
+    width: 360px;
+    height: 360px;
+}
+
+.welcomep1{
+    width: 336px;
+    height: 360px;
+ 
+}
+.pwelcome{
+    font-size: 1rem;
+}
+.welcomerow{
+    width: 360px;
+}
+
+.minheight{
+    min-height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar{
+    top: 25px;
+    width: 100%;
+
+}
+.smallcustomw{
+    width: 330px;
+}
+
+}
+
