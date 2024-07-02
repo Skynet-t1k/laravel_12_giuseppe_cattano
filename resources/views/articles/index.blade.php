@@ -1,12 +1,15 @@
 <x-layout>
     
     <h1 class="mt-150 text-shadow text-center">Articoli</h1>
-    <x-errandsuc />
+    <div class="container-fluid d-flex justify-content-center w-100">
+        <x-errandsuc />
+
+    </div>
     
     <div class="row w-100 d-flex justify-content-center">
         
         @if ($articles->isEmpty())
-        <h2 class="mt-150 text-shadow text-center">Nessun articolo presente ancora postato. Sii il primo a inserirne uno!</h2>
+        <h2 class="mt-150 text-shadow text-center">Nessun articolo postato. Sii il primo a inserirne uno!</h2>
         @endif
         
         @foreach ($articles as $article)

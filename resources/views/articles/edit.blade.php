@@ -24,12 +24,14 @@
       <label for="body" class="form-label">Main Content</label>
       <textarea class="form-control shadow" name="body" id="body" cols="60" rows="10">{{$article->body}}</textarea>
     </div>
+    @if ($tags->isNotEmpty())
     <label for="tags">Tags:</label>
     <select id="tags" name="tags[]" multiple>
         @foreach($tags as $tag)
             <option value="{{ $tag->id }}" @if($article->tags->contains($tag)) selected @endif>{{ $tag->name }}</option>
         @endforeach
     </select>
+    @endif
     <div class="d-flex align-items-center mt-3">
       <button type="submit" class="btn btn-warning shadow me-2">Salva</button>
       <a href="{{ route('articles.index') }}" class="shadow p-2 btn btn-secondary">Cancel</a>
