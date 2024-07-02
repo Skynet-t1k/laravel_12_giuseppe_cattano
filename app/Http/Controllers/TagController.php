@@ -46,6 +46,7 @@ class TagController extends Controller
 
     public function destroy(Tag $tag)
     {
+        $tag->articles()->detach();
         $tag->delete();
         return redirect()->route('tags.index')->with('message', 'Tag Cancellato');
     }
